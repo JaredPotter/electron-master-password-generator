@@ -1,0 +1,21 @@
+.randomized-dice-column-container {
+}
+
+.dice-column {
+  display: flex;
+  flex-direction: column; /*TODO: remove once we learn how to shrink the Die component (css) */
+}
+
+.die-box {
+  margin-bottom: 1rem;
+}
+
+.result-word {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
