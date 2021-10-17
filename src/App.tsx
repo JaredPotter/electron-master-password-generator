@@ -71,7 +71,9 @@ function App() {
   }
 
   async function handleRollDiceClick() {
+    setWordMap(new Map<number, string>());
     setIsRolling(true);
+    setPassPhase('');
 
     for (let i = 0; i < wordCount; i++) {
       updateIsColumnRollingMap(i, true);
@@ -440,57 +442,53 @@ function App() {
       {wordMap.size === wordCount ? (
         <div className="word-results">
           <div className="separate-words">
-            {wordMap.size === wordCount
-              ? Array.from(wordMap.entries()).map(
-                  (value: [number, string], index) => {
-                    const word = value[1];
+            {Array.from(wordMap.entries()).map(
+              (value: [number, string], index) => {
+                const word = value[1];
 
-                    return (
-                      <div className="separate-word" key={word + '_' + index}>
-                        {word.split('').map((character, characterIndex) => {
-                          return (
-                            <span
-                              key={
-                                character +
-                                '_' +
-                                word +
-                                '_' +
-                                index +
-                                '_' +
-                                characterIndex
-                              }
-                              className={`character ${getSeparateWordCharacterClass(
-                                index,
-                                character,
-                                characterIndex
-                              )}`}
-                            >
-                              {character}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    );
-                  }
-                )
-              : null}
+                return (
+                  <div className="separate-word" key={word + '_' + index}>
+                    {word.split('').map((character, characterIndex) => {
+                      return (
+                        <span
+                          key={
+                            character +
+                            '_' +
+                            word +
+                            '_' +
+                            index +
+                            '_' +
+                            characterIndex
+                          }
+                          className={`character ${getSeparateWordCharacterClass(
+                            index,
+                            character,
+                            characterIndex
+                          )}`}
+                        >
+                          {character}
+                        </span>
+                      );
+                    })}
+                  </div>
+                );
+              }
+            )}
           </div>
           <div>
-            {wordMap.size === wordCount
-              ? passPhase.split('').map((character, characterIndex) => {
-                  return (
-                    <span
-                      className={`character ${getCharacterClass(
-                        character,
-                        characterIndex
-                      )}`}
-                      key={character + '_' + characterIndex}
-                    >
-                      {character}
-                    </span>
-                  );
-                })
-              : null}
+            {passPhase.split('').map((character, characterIndex) => {
+              return (
+                <span
+                  className={`character ${getCharacterClass(
+                    character,
+                    characterIndex
+                  )}`}
+                  key={character + '_' + characterIndex}
+                >
+                  {character}
+                </span>
+              );
+            })}
           </div>
           <h3>Practice new Pass-Phase</h3>
           <input
@@ -499,6 +497,7 @@ function App() {
             value={practicePassPhase}
             onChange={handlePassPhraseChange}
             ref={practicePassPhaseInputElement}
+            disabled={isRolling}
           />
         </div>
       ) : (
