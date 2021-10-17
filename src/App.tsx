@@ -61,6 +61,10 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    setWordMap(new Map<number, string>());
+  }, [wordCount]);
+
   function handleWordCountClick(count: number) {
     setWordCount(count);
     handleRollDiceClick();
@@ -438,7 +442,7 @@ function App() {
           </div>
         </div>
       ) : null}
-      {wordMap.size === wordCount ? (
+      {!isRolling ? (
         <div className="word-results">
           <div className="separate-words">
             {Array.from(wordMap.entries()).map(
