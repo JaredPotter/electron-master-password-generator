@@ -324,7 +324,8 @@ function App() {
       </h3>
       <div className="description">
         This tool is strictly an offline tool. It does *<strong>not</strong>*
-        connect to the internet for greater security.
+        send any network requests nor saves any data in cookies or storage for
+        greater security.
       </div>
       <div className="description">
         How many words would you like in your passphrase?

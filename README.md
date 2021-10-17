@@ -5,6 +5,8 @@ Optimal means easier to type
 - no repeated characters
 - no repeated finger use
 
+LIVE DEMO: [Master Password Generator](https://jaredpotter.github.io/electron-master-password-generator)
+
 Maybe:
 
 - optional no repeated hand use (left hand, right hand alternation)
