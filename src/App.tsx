@@ -319,18 +319,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Master Passphrase Generator</h1>
+      <h1>Master Password Generator</h1>
       <h3>
         A simple tool for securely generating a user friendly typing optimized
-        Passphrase
+        Password
       </h3>
       <div className="description">
-        This tool is strictly an offline tool. It does *<strong>not</strong>*
-        send any network requests nor saves any data in cookies or storage for
-        greater security.
+        This tool does *<strong>not</strong>* send any network requests nor
+        saves any data in cookies or storage for greater security.
       </div>
       <div className="description">
-        How many words would you like in your passphrase?
+        How many words would you like in your Password?
       </div>
       <div>
         <button
