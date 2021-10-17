@@ -116,12 +116,11 @@ function App() {
 
           if (isNewWordAllowed) {
             previousWordLastCharacter = newWord.substring(newWord.length - 1);
-            console.log(newWord);
 
             updateWordMap(i, newWord);
             wordFound = true;
           } else {
-            console.log('word not allowed - ' + newWord);
+            // console.log('word not allowed - ' + newWord);
           }
         }
       }
@@ -292,12 +291,11 @@ function App() {
 
         if (isNewWordAllowed) {
           previousWordLastCharacter = newWord.substring(newWord.length - 1);
-          console.log(newWord);
 
           updateWordMap(columnIndex, newWord);
           wordFound = true;
         } else {
-          console.log('word not allowed - ' + newWord);
+          // console.log('word not allowed - ' + newWord);
         }
       }
     }
