@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/electron-master-password-generator/static/css/main.e6abaeab.chunk.css",
-    "main.js": "/electron-master-password-generator/static/js/main.ae61ffcd.chunk.js",
-    "main.js.map": "/electron-master-password-generator/static/js/main.ae61ffcd.chunk.js.map",
+    "main.js": "/electron-master-password-generator/static/js/main.42580457.chunk.js",
+    "main.js.map": "/electron-master-password-generator/static/js/main.42580457.chunk.js.map",
     "runtime-main.js": "/electron-master-password-generator/static/js/runtime-main.2a11acf7.js",
     "runtime-main.js.map": "/electron-master-password-generator/static/js/runtime-main.2a11acf7.js.map",
     "static/js/2.994a4aa1.chunk.js": "/electron-master-password-generator/static/js/2.994a4aa1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2a11acf7.js",
     "static/js/2.994a4aa1.chunk.js",
     "static/css/main.e6abaeab.chunk.css",
-    "static/js/main.ae61ffcd.chunk.js"
+    "static/js/main.42580457.chunk.js"
   ]
 }
