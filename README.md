@@ -10,8 +10,14 @@ Maybe:
 - optional no repeated hand use (left hand, right hand alternation)
   ^ currently disabled
 
+Built using Electron, React, and TypeScript.
+
 Wordlist sourced from:
 
 - https://theworld.com/~reinhold/diceware.wordlist.asc
 
 Words containing repeated letters and repeated typing finger are filtered out.
+
+Inspired partly by:
+Diceware Dmuth
+https://diceware.dmuth.org/
